@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projets – Thierry</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Thierry</a>
+      <ul class="nav-links">
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projets.html">Projets</a></li>
+        <li><a href="competences.html">Compétences</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+  <h1>Mes projets</h1>
+
+  <section>
+    <h2>Projets universitaires</h2>
+
+    <div class="project-card">
+      <h3>📡 Géolocalisation par Wi-Fi</h3>
+      <p>
+        Conception d’un système de localisation en intérieur basé sur les signaux RSSI. Le projet consiste à
+        collecter des cartes de puissance de signal Wi-Fi et à entraîner un réseau de neurones capable de
+        prédire en temps réel la position <code>(x, y)</code> d’un dispositif mobile.
+      </p>
+      <p><strong>Technos :</strong> Python, Pandas, Scikit-learn, Keras</p>
+      <a href="https://github.com/ThierryTsc/Wi-Fi-Geolocalisation-using-RSSI" target="_blank">Voir sur GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>👕 Classification – Fashion MNIST</h3>
+      <p>
+        Développement d’un système de reconnaissance automatique de vêtements à partir du dataset Fashion MNIST.
+        Le pipeline comprend une analyse exploratoire, une normalisation des données, puis l’entraînement de deux
+        architectures : un réseau dense simple et un CNN inspiré de LeNet-5.
+      </p>
+      <p><strong>Technos :</strong> Python, TensorFlow, Keras</p>
+      <a href="https://github.com/ThierryTsc/Fashion-MNIST-Image-Classification" target="_blank">Voir sur GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>🚉 Challenge Data SNCF</h3>
+      <p>
+        Participation à un concours sous l'égérie de la SNCF visant à prédire l’affluence dans les gares françaises.
+        Utilisation de modèles de machine learning supervisés (régression, réseau de neurones) pour analyser de
+        grandes quantités de données temporelles et spatiales.
+      </p>
+      <p><strong>Technos :</strong> Python, Pandas, Keras</p>
+      <a href="https://github.com/ThierryTsc/SNCF-Transilien-Daily-Validations-Forecast" target="_blank">Voir sur GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📈 Résolution d’EDP</h3>
+      <p>
+        Implémentation de plusieurs méthodes numériques pour résoudre des EDP linéaires :
+        <em>Jacobi, Gauss-Seidel, Gradient Conjugué</em>. Étude de la vitesse de convergence et comparaison
+        des performances selon le type de matrice.
+      </p>
+      <p><strong>Technos :</strong> C, algèbre linéaire</p>
+    </div>
+  </section>
+</main>
+
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Thierry</p>
+  </footer>
+</body>
+</html>
