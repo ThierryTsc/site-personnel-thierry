@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Accueil – Thierry</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo">Thierry</a>
-      <ul class="nav-links">
+          <!-- bouton menu -->
+    <button class="menu-toggle" id="menu-toggle">☰</button> 
+      <ul class="nav-links" id="nav-links">
         <li><a href="about.html">À propos</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="competences.html">Compétences</a></li>
@@ -32,5 +36,15 @@
   <footer class="site-footer">
     <p>&copy; 2025 Thierry — Tous droits réservés</p>
   </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
 </body>
 </html>
