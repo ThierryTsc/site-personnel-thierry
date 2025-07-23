@@ -5,12 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projets – Thierry</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
+
 <body>
   <header class="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo">Thierry</a>
-      <ul class="nav-links">
+          <!-- bouton menu -->
+    <button class="menu-toggle" id="menu-toggle">☰ </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="about.html">À propos</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="competences.html">Compétences</a></li>
@@ -26,7 +31,7 @@
   <section>
     <h2>Projets universitaires</h2>
 
-    <div class="project-card">
+    <div class="project-card" data-aos ="fade-up">
       <h3>📡 Géolocalisation par Wi-Fi</h3>
       <p>
         Conception d’un système de localisation en intérieur basé sur les signaux RSSI. Le projet consiste à
@@ -37,7 +42,7 @@
       <a href="https://github.com/ThierryTsc/Wi-Fi-Geolocalisation-using-RSSI" target="_blank">Voir sur GitHub</a>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-up">
       <h3>👕 Classification – Fashion MNIST</h3>
       <p>
         Développement d’un système de reconnaissance automatique de vêtements à partir du dataset Fashion MNIST.
@@ -48,7 +53,7 @@
       <a href="https://github.com/ThierryTsc/Fashion-MNIST-Image-Classification" target="_blank">Voir sur GitHub</a>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" data-aos="fade-up">
       <h3>🚉 Challenge Data SNCF</h3>
       <p>
         Participation à un concours sous l'égérie de la SNCF visant à prédire l’affluence dans les gares françaises.
@@ -59,7 +64,7 @@
       <a href="https://github.com/ThierryTsc/SNCF-Transilien-Daily-Validations-Forecast" target="_blank">Voir sur GitHub</a>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" data-aos = "fade-up">
       <h3>📈 Résolution d’EDP</h3>
       <p>
         Implémentation de plusieurs méthodes numériques pour résoudre des EDP linéaires :
@@ -75,5 +80,14 @@
   <footer class="site-footer">
     <p>&copy; 2025 Thierry</p>
   </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
 </body>
 </html>
