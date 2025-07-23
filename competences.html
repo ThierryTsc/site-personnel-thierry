@@ -5,12 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Compétences – Thierry</title>
   <link rel="stylesheet" href="styles.css"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
 </head>
 <body>
   <header class="site-header">
     <nav class="navbar">
       <a href="index.html" class="logo">Thierry</a>
-      <ul class="nav-links">
+          <!-- bouton menu -->
+    <button class="menu-toggle" id="menu-toggle">☰ </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="about.html">À propos</a></li>
         <li><a href="projets.html">Projets</a></li>
         <li><a href="competences.html">Compétences</a></li>
@@ -23,7 +27,7 @@
   <main class="main-content">
   <h1>Mes compétences</h1>
 
-  <div class="skill-card">
+  <div class="skill-card" data-aos="fade-right">
     <h2>🧮 Mathématiques appliquées</h2>
     <ul>
       <li>Équations différentielles (biologie, finance, mécanique des fluides)</li>
@@ -32,7 +36,7 @@
     </ul>
   </div>
 
-  <div class="skill-card">
+  <div class="skill-card" data-aos="fade-right">
     <h2>📊 Probabilités et statistiques</h2>
     <ul>
       <li>Simulation aléatoire</li>
@@ -42,7 +46,7 @@
     </ul>
   </div>
 
-  <div class="skill-card">
+  <div class="skill-card" data -aos="fade-right">
     <h2>🤖 Machine Learning</h2>
     <ul>
       <li>Réseaux de neurones (denses, CNN)</li>
@@ -51,7 +55,7 @@
     </ul>
   </div>
 
-  <div class="skill-card">
+  <div class="skill-card" data-aos="fade-right">
     <h2>💻 Informatique</h2>
     <ul>
       <li>Langages : Python, C/C++, MATLAB, R, SQL, SAS, OCaml</li>
@@ -61,7 +65,7 @@
     </ul>
   </div>
 
-  <div class="skill-card">
+  <div class="skill-card" data-aos="fade-right">
     <h2>🔧 Outils et plateformes</h2>
     <ul>
       <li>Git, GitHub : gestion de version, collaboration</li>
@@ -75,5 +79,15 @@
   <footer class="site-footer">
     <p>&copy; 2025 Thierry</p>
   </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+
 </body>
 </html>
